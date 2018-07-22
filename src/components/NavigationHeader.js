@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import {View, Text} from 'react-native';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { View, Text } from "react-native";
 
 class NavigationHeader extends Component {
   render() {
@@ -12,8 +12,6 @@ class NavigationHeader extends Component {
   }
 }
 
-NavigationHeader.propTypes = {
-
-};
+NavigationHeader.propTypes = {};
 
 export default NavigationHeader;

@@ -12,6 +12,7 @@
     "react": "16.4.1",
     "react-native": "0.56.0",
     "react-native-keyboard-aware-scroll-view": "^0.6.0",
+    "react-native-vector-icons": "^4.6.0",
     "react-navigation": "^2.8.0",
     "react-redux": "^5.0.7",
     "styled-components": "^3.3.3"
@@ -26,6 +27,8 @@
     "preset": "react-native"
   },
   "rnpm": {
-    "assets": ["./assets/fonts"]
+    "assets": [
+      "./assets/fonts"
+    ]
   }
 }

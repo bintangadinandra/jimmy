@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { Container } from '../components/Wrappers';
-import { HeadingTwo } from '../components/Typography';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { Container } from "../components/Wrappers";
+import { HeadingTwo } from "../components/Typography";
 
 class SettingsScreen extends Component {
   static navigationOptions = {
-    title: 'Settings'
-  }
+    title: "Settings"
+  };
 
   render() {
     return (
@@ -17,8 +17,6 @@ class SettingsScreen extends Component {
   }
 }
 
-SettingsScreen.propTypes = {
-
-};
+SettingsScreen.propTypes = {};
 
 export default SettingsScreen;

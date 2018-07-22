@@ -1,22 +1,22 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { View, Text } from 'react-native';
-import { HeadingOne } from '../components/Typography';
-import { Container, Flex, BaseView } from '../components/Wrappers';
-import { ApplicationHeader } from '../components/ApplicationHeader';
-import TodoList from '../TodoList';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { View, Text } from "react-native";
+import Icon from "react-native-vector-icons/FontAwesome";
+
+import { HeadingOne } from "../components/Typography";
+import { Container, Flex, BaseView } from "../components/Wrappers";
+import { ApplicationHeader } from "../components/ApplicationHeader";
+import TodoList from "../TodoList";
 
 class DashboardScreen extends Component {
-  static navigationOptions = ({navigation}) => {
+  static navigationOptions = ({ navigation }) => {
     return {
       headerLeft: null,
       headerTitle: (
-        <ApplicationHeader
-          title="Jimmy"
-          navigation={navigation}/>
-        ),
-    }
-  }
+        <ApplicationHeader title="Jimmy" isLogo navigation={navigation} />
+      )
+    };
+  };
 
   constructor(props) {
     super(props);
@@ -24,17 +24,16 @@ class DashboardScreen extends Component {
 
   render() {
     return (
-      <Flex
-        fullHeight>
+      <Flex fullHeight>
         <HeadingOne>Todos</HeadingOne>
-        <TodoList></TodoList>
+        <TodoList />
       </Flex>
-    )
+    );
   }
 }
 
 DashboardScreen.propTypes = {
   auth: PropTypes.bool
-}
+};
 
-export default DashboardScreen
+export default DashboardScreen;

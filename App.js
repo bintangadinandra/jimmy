@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View, Button} from 'react-native';
-import { createStackNavigator } from 'react-navigation';
-import DashboardScreen from './src/pages/DashboardScreen';
-import SettingsScreen from './src/pages/SettingsScreen';
-import StyleGuideModal from './src/modals/StyleGuideModal';
-import WelcomeModal from './src/modals/WelcomeModal';
+import React, { Component } from "react";
+import { Platform, StyleSheet, Text, View, Button } from "react-native";
+import { createStackNavigator } from "react-navigation";
+import DashboardScreen from "./src/pages/DashboardScreen";
+import SettingsScreen from "./src/pages/SettingsScreen";
+import StyleGuideModal from "./src/modals/StyleGuideModal";
+import WelcomeModal from "./src/modals/WelcomeModal";
 
 const MainStack = createStackNavigator(
   {
@@ -12,17 +12,17 @@ const MainStack = createStackNavigator(
     Settings: SettingsScreen
   },
   {
-    initialRouteName: 'Dashboard',
+    initialRouteName: "Dashboard",
     navigationOptions: {
       headerStyle: {
         elevation: 0,
         borderBottomWidth: 1,
-        borderBottomColor: 'gainsboro',
-        textAlign: 'center'
-      },
+        borderBottomColor: "gainsboro",
+        textAlign: "center"
+      }
     }
   }
-)
+);
 
 const RootStack = createStackNavigator(
   {
@@ -37,24 +37,22 @@ const RootStack = createStackNavigator(
     }
   },
   {
-    mode: 'modal',
-    headerMode: 'none'
+    mode: "modal",
+    headerMode: "none"
   }
-)
+);
 
 export default class App extends Component<Props> {
   render() {
-    return (
-      <RootStack />
-    );
+    return <RootStack />;
   }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#F5FCFF"
+  }
 });

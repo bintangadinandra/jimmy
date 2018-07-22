@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Flex = styled.View`
   display: flex;
-`
+`;
 
-export default Flex
+export default Flex;
