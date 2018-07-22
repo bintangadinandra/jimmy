@@ -26,7 +26,7 @@ export const FormInput = styled.TextInput`
   border: 1px solid gainsboro;
   padding: 8px 16px;
   margin: 4px 0px;
-  border-radius: 100px;
+  border-radius: 5;
 `;
 
 export const NakedButton = styled.Button`

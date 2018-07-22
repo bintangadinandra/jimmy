@@ -4,7 +4,7 @@ import { View } from "react-native";
 
 const FaIcon = ({ size, name, color, style, debug }) => (
   <View style={style}>
-    <Icon size={size} name={name} color={color} />{" "}
+    <Icon size={size} name={name} color={color} />
   </View>
 );
 

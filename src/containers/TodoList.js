@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import { Text, Button, View, ScrollView } from "react-native";
-import Todo from "./components/Todo";
-import { HeadingTwo } from "./components/Typography";
+import Todo from "../components/Todo";
+import { HeadingTwo } from ".../components/Typography";
 
 class TodoList extends PureComponent {
   static navigationOptions = {

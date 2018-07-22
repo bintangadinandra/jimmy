@@ -1,9 +1,13 @@
 import React from "react";
+import { View } from "react-native";
 
-const Separator = ({ direction }) => (
+const Separator = () => (
   <View
     style={{
-      borderTop: "1px solid gainsboro"
+      borderTopWidth: 1,
+      borderTopColor: "gainsboro",
+      marginTop: 10,
+      marginBottom: 10
     }}
   />
 );

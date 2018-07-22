@@ -6,7 +6,8 @@ import Icon from "react-native-vector-icons/FontAwesome";
 import { HeadingOne } from "../components/Typography";
 import { Container, Flex, BaseView } from "../components/Wrappers";
 import { ApplicationHeader } from "../components/ApplicationHeader";
-import TodoList from "../TodoList";
+import TodoList from "../containers/TodoList";
+import WeatherInfo from "../components/WeatherInfo";
 
 class DashboardScreen extends Component {
   static navigationOptions = ({ navigation }) => {
@@ -25,6 +26,7 @@ class DashboardScreen extends Component {
   render() {
     return (
       <Flex fullHeight>
+        <WeatherInfo />
         <HeadingOne>Todos</HeadingOne>
         <TodoList />
       </Flex>
